@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    
+    <!-- META TAGS for SEO -->
+    <title>SAHANI SIGNATURE PRIVATE LIMITED - Market Research Company India</title>
+    <meta name="title" content="SAHANI SIGNATURE PRIVATE LIMITED - Market Research Across All India">
+    <meta name="description" content="SAHANI SIGNATURE PRIVATE LIMITED is India's premier market research company offering Face to Face Interviewing, CATI services, Mystery Shopping, Retail Audit & more across all 29 states. Led by Director Anand Sahani.">
+    <meta name="keywords" content="market research India, survey services, face to face interviewing, CATI services, mystery shopping, retail audit, concept testing, customer satisfaction survey, social research, media test services, Anand Sahani">
+    <meta name="author" content="SAHANI SIGNATURE PRIVATE LIMITED">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sahanisignature.com">
+    <meta property="og:title" content="SAHANI SIGNATURE PRIVATE LIMITED - Market Research India">
+    <meta property="og:description" content="Premium market research services across all 29 Indian states. Your Business Goals, Our Signature Solutions.">
+    <meta property="og:image" content="https://sahanisignature.com/og-image.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sahanisignature.com">
+    <meta property="twitter:title" content="SAHANI SIGNATURE PRIVATE LIMITED - Market Research India">
+    <meta property="twitter:description" content="Premium market research services across all 29 Indian states. Your Business Goals, Our Signature Solutions.">
+    <meta property="twitter:image" content="https://sahanisignature.com/og-image.jpg">
+    
+    <!-- GEO Meta Tags for Location Targeting -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+    <meta name="geo.position" content="20.5937;78.9629">
+    <meta name="ICBM" content="20.5937, 78.9629">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js for Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            background: #fff;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #c62828;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b71c1c;
+        }
+
+        /* Red and White Theme */
+        :root {
+            --primary-red: #c62828;
+            --dark-red: #b71c1c;
+            --light-red: #ef5350;
+            --white: #ffffff;
+            --off-white: #f8f8f8;
+            --gray: #333333;
+            --light-gray: #666666;
+        }
+
+        /* Navigation - Mobile First */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(198, 40, 40, 0.15);
+            z-index: 1000;
+            animation: slideDown 0.5s ease;
+            border-bottom: 2px solid var(--primary-red);
+            backdrop-filter: blur(10px);
+        }
+
+        @media (min-width: 768px) {
+            .navbar {
+                padding: 15px 30px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .navbar {
+                padding: 20px 50px;
+            }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .logo {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        .logo span {
+            color: var(--gray);
+            font-weight: 400;
+            font-size: 9px;
+            display: block;
+        }
+
+        @media (min-width: 480px) {
+            .logo {
+                font-size: 18px;
+            }
+            .logo span {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .logo {
+                font-size: 22px;
+            }
+            .logo span {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .logo {
+                font-size: 26px;
+            }
+            .logo span {
+                font-size: 14px;
+            }
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: block;
+            font-size: 24px;
+            color: var(--primary-red);
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 1001;
+        }
+
+        .menu-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        @media (min-width: 1024px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        .nav-links {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: white;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            gap: 15px;
+            border-top: 2px solid var(--primary-red);
+            animation: slideDown 0.3s ease;
+        }
+
+        .nav-links.active {
+            display: flex;
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links {
+                display: flex;
+                position: static;
+                width: auto;
+                background: transparent;
+                box-shadow: none;
+                flex-direction: row;
+                padding: 0;
+                gap: 30px;
+                border-top: none;
+                animation: none;
+            }
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            font-size: 15px;
+            position: relative;
+            transition: 0.3s;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(198, 40, 40, 0.1);
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links a {
+                padding: 5px 0;
+                border-bottom: none;
+            }
+        }
+
+        .nav-links a:last-child {
+            border-bottom: none;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-red);
+            transition: width 0.3s;
+        }
+
+        @media (min-width: 1024px) {
+            .nav-links a::after {
+                bottom: -5px;
+            }
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* GEO Location Banner */
+        .geo-banner {
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 12px;
+            position: fixed;
+            top: 70px;
+            width: 100%;
+            z-index: 999;
+            animation: slideInTop 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 480px) {
+            .geo-banner {
+                font-size: 13px;
+                padding: 8px 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .geo-banner {
+                font-size: 14px;
+                padding: 10px 30px;
+                top: 80px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .geo-banner {
+                top: 90px;
+                padding: 12px 50px;
+            }
+        }
+
+        @keyframes slideInTop {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .geo-banner i {
+            font-size: 14px;
+            animation: pulse 2s infinite;
+        }
+
+        .geo-banner button {
+            background: white;
+            color: var(--primary-red);
+            border: none;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-left: 10px;
+        }
+
+        .geo-banner button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .location-dot {
+            width: 8px;
+            height: 8px;
+            background: #4caf50;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Hero Section - Mobile First */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 15px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding: 120px 30px 50px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero {
+                flex-direction: row;
+                padding: 120px 50px 60px;
+                min-height: 100vh;
+            }
+        }
+
+        .network-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+            animation: fadeInUp 1s ease;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content {
+                text-align: left;
+                padding-right: 40px;
+                margin-bottom: 0;
+            }
+        }
+
+        .hero-content h1 {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.3;
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 480px) {
+            .hero-content h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero-content h1 {
+                font-size: 48px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content h1 {
+                font-size: 58px;
+            }
+        }
+
+        .slogan {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-red);
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        @media (min-width: 480px) {
+            .slogan {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .slogan {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .slogan {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .slogan::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 2px;
+            background: var(--primary-red);
+            animation: expandLine 1.5s ease-in-out infinite;
+        }
+
+        @media (min-width: 1024px) {
+            .slogan::after {
+                left: 0;
+                transform: none;
+            }
+        }
+
+        .hero-content p {
+            font-size: 14px;
+            color: var(--light-gray);
+            margin-bottom: 20px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 768px) {
+            .hero-content p {
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content p {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+            align-items: center;
+        }
+
+        @media (min-width: 480px) {
+            .hero-buttons {
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            text-align: center;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        @media (min-width: 480px) {
+            .btn-primary, .btn-secondary {
+                width: auto;
+                min-width: 160px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .btn-primary, .btn-secondary {
+                padding: 14px 35px;
+                font-size: 16px;
+            }
+        }
+
+        .btn-primary {
+            background: var(--primary-red);
+            color: white;
+            border: 2px solid var(--primary-red);
+        }
+
+        .btn-primary:hover {
+            background: var(--dark-red);
+            border-color: var(--dark-red);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(198, 40, 40, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-red);
+            border: 2px solid var(--primary-red);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-red);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(198, 40, 40, 0.3);
+        }
+
+        .hero-graph {
+            width: 100%;
+            z-index: 2;
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(198, 40, 40, 0.15);
+            animation: float 4s ease-in-out infinite;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-graph {
+                padding: 25px;
+                border-radius: 20px;
+                max-width: 600px;
+                margin: 30px auto 0;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-graph {
+                margin-top: 0;
+                max-width: none;
+            }
+        }
+
+        /* State Selector - NEW GEO Feature */
+        .state-selector {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 20px 15px;
+            border: 1px solid rgba(198, 40, 40, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .state-selector {
+                padding: 25px;
+                margin: 30px;
+                border-radius: 20px;
+            }
+        }
+
+        .state-selector h3 {
+            color: var(--gray);
+            font-size: 16px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .state-selector h3 {
+                font-size: 20px;
+                margin-bottom: 20px;
+                gap: 10px;
+            }
+        }
+
+        .state-selector h3 i {
+            color: var(--primary-red);
+        }
+
+        .state-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        @media (min-width: 480px) {
+            .state-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .state-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .state-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .state-btn {
+            padding: 8px 5px;
+            border: 1px solid rgba(198, 40, 40, 0.2);
+            background: white;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--gray);
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+        }
+
+        @media (min-width: 480px) {
+            .state-btn {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .state-btn {
+                font-size: 14px;
+                padding: 10px 15px;
+                border-radius: 10px;
+            }
+        }
+
+        .state-btn:hover {
+            background: rgba(198, 40, 40, 0.05);
+            border-color: var(--primary-red);
+            transform: translateY(-2px);
+        }
+
+        .state-btn.active {
+            background: var(--primary-red);
+            color: white;
+            border-color: var(--primary-red);
+        }
+
+        .state-btn i {
+            font-size: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .state-btn i {
+                font-size: 12px;
+            }
+        }
+
+        /* Location Info Card */
+        .location-info {
+            background: linear-gradient(135deg, #f8f8f8, white);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px 15px;
+            border-left: 4px solid var(--primary-red);
+            animation: slideInLeft 0.5s ease;
+        }
+
+        @media (min-width: 768px) {
+            .location-info {
+                padding: 25px;
+                margin: 30px;
+                border-radius: 20px;
+            }
+        }
+
+        .location-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .location-header i {
+            font-size: 20px;
+            color: var(--primary-red);
+        }
+
+        .location-header h4 {
+            font-size: 16px;
+            color: var(--gray);
+        }
+
+        @media (min-width: 768px) {
+            .location-header i {
+                font-size: 24px;
+            }
+            .location-header h4 {
+                font-size: 18px;
+            }
+        }
+
+        .location-details {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        @media (min-width: 480px) {
+            .location-details {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .detail-item i {
+            color: var(--primary-red);
+            font-size: 14px;
+        }
+
+        .detail-item span {
+            font-size: 13px;
+            color: var(--light-gray);
+        }
+
+        /* India Map SVG */
+        .india-map-container {
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .india-map-container {
+                padding: 30px;
+            }
+        }
+
+        .india-map-svg {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .india-map-svg path {
+            fill: #f0f0f0;
+            stroke: var(--primary-red);
+            stroke-width: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .india-map-svg path:hover {
+            fill: rgba(198, 40, 40, 0.2);
+            stroke-width: 1.5;
+        }
+
+        /* Services Section - Mobile Optimized */
+        .services-section {
+            padding: 60px 15px;
+            background: var(--white);
+        }
+
+        @media (min-width: 768px) {
+            .services-section {
+                padding: 80px 30px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-section {
+                padding: 100px 50px;
+            }
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                margin-bottom: 60px;
+            }
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: var(--gray);
+            position: relative;
+            display: inline-block;
+        }
+
+        @media (min-width: 480px) {
+            .section-title h2 {
+                font-size: 32px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .section-title h2 {
+                font-size: 38px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-title h2 {
+                font-size: 42px;
+            }
+        }
+
+        .section-title p {
+            color: var(--light-gray);
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        @media (min-width: 768px) {
+            .section-title p {
+                font-size: 16px;
+                margin-top: 15px;
+            }
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 480px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 25px 20px;
+            box-shadow: 0 5px 20px rgba(198, 40, 40, 0.08);
+            transition: 0.3s;
+            border: 1px solid rgba(198, 40, 40, 0.05);
+        }
+
+        @media (min-width: 768px) {
+            .service-card {
+                padding: 30px 25px;
+            }
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(198, 40, 40, 0.15);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-red), var(--light-red));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .service-icon {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .service-icon i {
+            font-size: 28px;
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            .service-icon i {
+                font-size: 32px;
+            }
+        }
+
+        .service-card h3 {
+            font-size: 18px;
+            color: var(--gray);
+            margin-bottom: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .service-card h3 {
+                font-size: 20px;
+            }
+        }
+
+        .service-card p {
+            color: var(--light-gray);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+            .service-card p {
+                font-size: 14px;
+            }
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 15px;
+        }
+
+        .service-features li {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--light-gray);
+            font-size: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .service-features li {
+                font-size: 13px;
+            }
+        }
+
+        .service-features li i {
+            color: var(--primary-red);
+            font-size: 12px;
+        }
+
+        .service-tag {
+            display: inline-block;
+            padding: 4px 10px;
+            background: rgba(198, 40, 40, 0.08);
+            color: var(--primary-red);
+            border-radius: 50px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .service-tag {
+                font-size: 11px;
+                padding: 4px 12px;
+            }
+        }
+
+        /* Survey Section */
+        .survey-section {
+            padding: 60px 15px;
+            background: var(--off-white);
+        }
+
+        @media (min-width: 768px) {
+            .survey-section {
+                padding: 80px 30px;
+            }
+        }
+
+        .graph-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .graph-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        .graph-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(198, 40, 40, 0.05);
+        }
+
+        @media (min-width: 768px) {
+            .graph-card {
+                padding: 25px;
+            }
+        }
+
+        .graph-card h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .chart-container {
+            height: 250px;
+        }
+
+        /* Network Section */
+        .connection-section {
+            padding: 60px 15px;
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
+        }
+
+        @media (min-width: 768px) {
+            .connection-section {
+                padding: 80px 30px;
+            }
+        }
+
+        .network-container {
+            height: 400px;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .network-container {
+                height: 500px;
+            }
+        }
+
+        /* Live Data */
+        .live-data {
+            padding: 60px 15px;
+            background: white;
+        }
+
+        .live-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 480px) {
+            .live-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .live-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+        }
+
+        .live-card {
+            padding: 30px 20px;
+        }
+
+        /* Demographics */
+        .demographics {
+            padding: 60px 15px;
+        }
+
+        .demographics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        @media (min-width: 480px) {
+            .demographics-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
+
+        .demo-item {
+            padding: 20px 15px;
+        }
+
+        .progress-ring {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+        }
+
+        @media (min-width: 768px) {
+            .progress-ring {
+                width: 130px;
+                height: 130px;
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 60px 15px;
+        }
+
+        .contact-container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 1024px) {
+            .contact-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+            }
+        }
+
+        .form-container iframe {
+            height: 600px;
+        }
+
+        @media (min-width: 768px) {
+            .form-container iframe {
+                height: 700px;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 15px;
+        }
+
+        @media (min-width: 768px) {
+            .footer {
+                padding: 50px 30px;
+            }
+        }
+
+        .footer-logo {
+            font-size: 24px;
+        }
+
+        .social-links {
+            flex-wrap: wrap;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes expandLine {
+            0%, 100% { width: 40px; opacity: 0.5; }
+            50% { width: 80px; opacity: 1; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            SAHANI SIGNATURE
+            <span>PRIVATE LIMITED</span>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#surveys" onclick="closeMenu()">Surveys</a>
+            <a href="#network" onclick="closeMenu()">Network</a>
+            <a href="#live" onclick="closeMenu()">Live Data</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- GEO Location Banner -->
+    <div class="geo-banner" id="geoBanner">
+        <i class="fas fa-map-marker-alt"></i>
+        <span id="locationText">Detecting your location...</span>
+        <button onclick="getLocation()"><i class="fas fa-location-dot"></i> Allow Location</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="network-bg" id="network-bg"></div>
+        <div class="hero-content">
+            <div class="slogan">Your Business Goals , Our Signature Solutions.</div>
+            <h1>
+                Market Research <br>
+                <span style="color: var(--primary-red);">Across All India</span>
+            </h1>
+            <p>Connecting with millions of respondents across 29 states. Real-time data collection, advanced analytics, and actionable insights.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Start Survey</a>
+                <a href="#services" class="btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-graph">
+            <canvas id="liveChart"></canvas>
+        </div>
+    </section>
+
+    <!-- State Selector - GEO Feature -->
+    <div class="state-selector">
+        <h3><i class="fas fa-map-marked-alt"></i> Select Your State for Localized Services</h3>
+        <div class="state-grid" id="stateGrid">
+            <button class="state-btn" onclick="selectState('North India')"><i class="fas fa-map-pin"></i> North India</button>
+            <button class="state-btn" onclick="selectState('South India')"><i class="fas fa-map-pin"></i> South India</button>
+            <button class="state-btn" onclick="selectState('East India')"><i class="fas fa-map-pin"></i> East India</button>
+            <button class="state-btn" onclick="selectState('West India')"><i class="fas fa-map-pin"></i> West India</button>
+            <button class="state-btn" onclick="selectState('Central India')"><i class="fas fa-map-pin"></i> Central India</button>
+            <button class="state-btn" onclick="selectState('North East')"><i class="fas fa-map-pin"></i> North East</button>
+            <button class="state-btn" onclick="selectState('Delhi NCR')"><i class="fas fa-map-pin"></i> Delhi NCR</button>
+            <button class="state-btn" onclick="selectState('Maharashtra')"><i class="fas fa-map-pin"></i> Maharashtra</button>
+            <button class="state-btn" onclick="selectState('Tamil Nadu')"><i class="fas fa-map-pin"></i> Tamil Nadu</button>
+            <button class="state-btn" onclick="selectState('Karnataka')"><i class="fas fa-map-pin"></i> Karnataka</button>
+            <button class="state-btn" onclick="selectState('Gujarat')"><i class="fas fa-map-pin"></i> Gujarat</button>
+            <button class="state-btn" onclick="selectState('West Bengal')"><i class="fas fa-map-pin"></i> West Bengal</button>
+            <button class="state-btn" onclick="selectState('Uttar Pradesh')"><i class="fas fa-map-pin"></i> Uttar Pradesh</button>
+            <button class="state-btn" onclick="selectState('Rajasthan')"><i class="fas fa-map-pin"></i> Rajasthan</button>
+            <button class="state-btn" onclick="selectState('Madhya Pradesh')"><i class="fas fa-map-pin"></i> Madhya Pradesh</button>
+        </div>
+    </div>
+
+    <!-- Location Info Card -->
+    <div class="location-info" id="locationInfo" style="display: none;">
+        <div class="location-header">
+            <i class="fas fa-location-dot"></i>
+            <h4 id="selectedLocation">Services in Your Region</h4>
+        </div>
+        <div class="location-details" id="locationDetails">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <div class="section-title">
+                <h2>Our Research Services</h2>
+                <p>12 specialized research methodologies across all Indian states</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 1. Face to Face Interviewing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Face to Face Interviewing</h3>
+                    <p>In-depth personal interviews with respondents across India. Our trained interviewers conduct structured conversations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Pan-India coverage</li>
+                        <li><i class="fas fa-check-circle"></i> Trained interviewers</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time data capture</li>
+                    </ul>
+                    <span class="service-tag">Qualitative Research</span>
+                </div>
+
+                <!-- 2. Self Competition Interviews -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Self Competition Interviews</h3>
+                    <p>Analyze your position against competitors through structured interviews with industry experts and customers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Competitor benchmarking</li>
+                        <li><i class="fas fa-check-circle"></i> Market positioning</li>
+                        <li><i class="fas fa-check-circle"></i> Strategic insights</li>
+                    </ul>
+                    <span class="service-tag">Competitive Analysis</span>
+                </div>
+
+                <!-- 3. Web Based Research -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Based Research</h3>
+                    <p>Online surveys, digital panels, and web analytics to gather insights from internet-savvy consumers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Online panels</li>
+                        <li><i class="fas fa-check-circle"></i> Digital analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Mobile-friendly surveys</li>
+                    </ul>
+                    <span class="service-tag">Digital Research</span>
+                </div>
+
+                <!-- 4. Mystery Shopping Research Service -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3>Mystery Shopping</h3>
+                    <p>Evaluate customer experience, service quality, and brand compliance through anonymous assessments.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Service audit</li>
+                        <li><i class="fas fa-check-circle"></i> Compliance check</li>
+                        <li><i class="fas fa-check-circle"></i> Experience benchmarking</li>
+                    </ul>
+                    <span class="service-tag">Mystery Research</span>
+                </div>
+
+                <!-- 5. Telephonic Interview -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telephonic Interview</h3>
+                    <p>Cost-effective telephone surveys reaching respondents across urban and rural India. Ideal for large sample sizes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Wide reach</li>
+                        <li><i class="fas fa-check-circle"></i> Quick turnaround</li>
+                        <li><i class="fas fa-check-circle"></i> Cost-effective</li>
+                    </ul>
+                    <span class="service-tag">Quantitative Research</span>
+                </div>
+
+                <!-- 6. CATI Services -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>CATI Services</h3>
+                    <p>Computer Assisted Telephone Interviewing with advanced scripting, real-time monitoring, and automated data collection.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Automated dialing</li>
+                        <li><i class="fas fa-check-circle"></i> Real-time validation</li>
+                        <li><i class="fas fa-check-circle"></i> Quality monitoring</li>
+                    </ul>
+                    <span class="service-tag">Advanced Telephony</span>
+                </div>
+
+                <!-- 7. Retail Shop Audit -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Retail Shop Audit</h3>
+                    <p>Comprehensive retail audits covering product availability, pricing, shelf share, and promotional compliance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Stock tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Pricing analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Competitor activity</li>
+                    </ul>
+                    <span class="service-tag">Retail Audit</span>
+                </div>
+
+                <!-- 8. Concept Testing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Concept Testing</h3>
+                    <p>Test new product ideas, packaging, and marketing concepts before launch. Get consumer feedback to refine offerings.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Product concepts</li>
+                        <li><i class="fas fa-check-circle"></i> Packaging testing</li>
+                        <li><i class="fas fa-check-circle"></i> Message validation</li>
+                    </ul>
+                    <span class="service-tag">Concept Research</span>
+                </div>
+
+                <!-- 9. Social Research Facilities -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Social Research Facilities</h3>
+                    <p>Study social trends, community behaviors, and cultural patterns across diverse Indian demographics.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Community studies</li>
+                        <li><i class="fas fa-check-circle"></i> Behavioral insights</li>
+                        <li><i class="fas fa-check-circle"></i> Social impact analysis</li>
+                    </ul>
+                    <span class="service-tag">Social Research</span>
+                </div>
+
+                <!-- 10. Customer Satisfaction Survey -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Customer Satisfaction Survey</h3>
+                    <p>Measure customer satisfaction, loyalty, and experience across touchpoints. Identify areas for improvement.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> CSAT measurement</li>
+                        <li><i class="fas fa-check-circle"></i> NPS tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Improvement roadmap</li>
+                    </ul>
+                    <span class="service-tag">Customer Research</span>
+                </div>
+
+                <!-- 11. Retail Shop Audit and Interview -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Retail Shop Audit + Interview</h3>
+                    <p>Combine physical store audits with shopkeeper/manager interviews for comprehensive retail insights.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Store observation</li>
+                        <li><i class="fas fa-check-circle"></i> Retailer feedback</li>
+                        <li><i class="fas fa-check-circle"></i> Integrated reporting</li>
+                    </ul>
+                    <span class="service-tag">Integrated Retail</span>
+                </div>
+
+                <!-- 12. Media Test Services -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Media Test Services</h3>
+                    <p>Test advertising effectiveness, media consumption patterns, and campaign impact across TV, print, and digital.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Ad testing</li>
+                        <li><i class="fas fa-check-circle"></i> Media reach analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Campaign effectiveness</li>
+                    </ul>
+                    <span class="service-tag">Media Research</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Survey Graphs Section -->
+    <section id="surveys" class="survey-section">
+        <div class="survey-container">
+            <div class="section-title">
+                <h2>Live Survey Data Visualization</h2>
+                <p>Real-time insights from across Indian markets</p>
+            </div>
+            <div class="graph-grid">
+                <div class="graph-card">
+                    <h3>Consumer Preferences by Region</h3>
+                    <div class="chart-container">
+                        <canvas id="regionChart"></canvas>
+                    </div>
+                </div>
+                <div class="graph-card">
+                    <h3>Market Growth Trends 2024</h3>
+                    <div class="chart-container">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                </div>
+                <div class="graph-card">
+                    <h3>Industry-wise Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="industryChart"></canvas>
+                    </div>
+                </div>
+                <div class="graph-card">
+                    <h3>Respondent Satisfaction Index</h3>
+                    <div class="chart-container">
+                        <canvas id="satisfactionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Person Connection Network -->
+    <section id="network" class="connection-section">
+        <div class="section-title" style="color: white;">
+            <h2 style="color: white;">Our Respondent Network</h2>
+            <p style="color: rgba(255,255,255,0.9);">10,000+ active respondents across India - Connected in real-time</p>
+        </div>
+        <div class="network-container" id="networkContainer"></div>
+    </section>
+
+    <!-- Live Data Section -->
+    <section id="live" class="live-data">
+        <div class="live-data-container">
+            <div class="section-title">
+                <h2>Live Survey Statistics</h2>
+                <p>Real-time data from ongoing surveys</p>
+            </div>
+            <div class="live-grid">
+                <div class="live-card">
+                    <i class="fas fa-users"></i>
+                    <span class="trend">↑ +12%</span>
+                    <h3 id="respondentCount">10,847</h3>
+                    <p>Active Respondents</p>
+                </div>
+                <div class="live-card">
+                    <i class="fas fa-file-alt"></i>
+                    <span class="trend">↑ +8%</span>
+                    <h3 id="surveyCount">1,234</h3>
+                    <p>Completed Surveys</p>
+                </div>
+                <div class="live-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="trend">↑ +15%</span>
+                    <h3 id="dataPointCount">2.5M</h3>
+                    <p>Data Points Collected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Respondent Demographics -->
+    <section class="demographics">
+        <div class="demographics-container">
+            <div class="section-title">
+                <h2>Respondent Demographics</h2>
+                <p>Diverse representation across all categories</p>
+            </div>
+            <div class="demographics-grid">
+                <div class="demo-item">
+                    <div class="progress-ring">
+                        <svg width="100%" height="100%" viewBox="0 0 150 150">
+                            <circle class="bg-circle" cx="75" cy="75" r="70" fill="none" stroke="#f0f0f0" stroke-width="8"/>
+                            <circle class="progress-circle" cx="75" cy="75" r="70" fill="none" stroke="#c62828" stroke-width="8" stroke-dasharray="440" stroke-dashoffset="132" stroke-linecap="round"/>
+                        </svg>
+                        <div class="progress-text">70%</div>
+                    </div>
+                    <h3>Urban</h3>
+                </div>
+                <div class="demo-item">
+                    <div class="progress-ring">
+                        <svg width="100%" height="100%" viewBox="0 0 150 150">
+                            <circle class="bg-circle" cx="75" cy="75" r="70" fill="none" stroke="#f0f0f0" stroke-width="8"/>
+                            <circle class="progress-circle" cx="75" cy="75" r="70" fill="none" stroke="#c62828" stroke-width="8" stroke-dasharray="440" stroke-dashoffset="264" stroke-linecap="round"/>
+                        </svg>
+                        <div class="progress-text">40%</div>
+                    </div>
+                    <h3>Rural</h3>
+                </div>
+                <div class="demo-item">
+                    <div class="progress-ring">
+                        <svg width="100%" height="100%" viewBox="0 0 150 150">
+                            <circle class="bg-circle" cx="75" cy="75" r="70" fill="none" stroke="#f0f0f0" stroke-width="8"/>
+                            <circle class="progress-circle" cx="75" cy="75" r="70" fill="none" stroke="#c62828" stroke-width="8" stroke-dasharray="440" stroke-dashoffset="176" stroke-linecap="round"/>
+                        </svg>
+                        <div class="progress-text">60%</div>
+                    </div>
+                    <h3>Male</h3>
+                </div>
+                <div class="demo-item">
+                    <div class="progress-ring">
+                        <svg width="100%" height="100%" viewBox="0 0 150 150">
+                            <circle class="bg-circle" cx="75" cy="75" r="70" fill="none" stroke="#f0f0f0" stroke-width="8"/>
+                            <circle class="progress-circle" cx="75" cy="75" r="70" fill="none" stroke="#c62828" stroke-width="8" stroke-dasharray="440" stroke-dashoffset="220" stroke-linecap="round"/>
+                        </svg>
+                        <div class="progress-text">50%</div>
+                    </div>
+                    <h3>Female</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Director Section -->
+    <section class="director" style="background: linear-gradient(135deg, var(--primary-red), var(--dark-red)); padding: 60px 20px; text-align: center; color: white;">
+        <div class="director-content">
+            <i class="fas fa-user-tie" style="font-size: 60px; margin-bottom: 20px;"></i>
+            <h2 style="font-size: 36px; margin-bottom: 15px;">DIRECTOR</h2>
+            <h3 style="font-size: 28px; margin-bottom: 15px;">ANAND SAHANI</h3>
+            <p style="font-size: 16px; max-width: 600px; margin: 0 auto;">Leading India's most comprehensive market research network</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Connect With Us</h2>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Director</h3>
+                        <p>ANAND SAHANI</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:sahanisigaturepvtlimited@gmail.com">sahanisigaturepvtlimited@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p><a href="tel:7050063458">+91 70500 63458</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Coverage</h3>
+                        <p>All 29 Indian States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>📋 Submit Survey Request</h2>
+                <iframe src="https://forms.gle/GdkWXEV761zTgHNe8" allowfullscreen></iframe>
+                <p style="text-align: center; margin-top: 15px;">
+                    <a href="https://forms.gle/GdkWXEV761zTgHNe8" target="_blank" style="color: var(--primary-red);">Open form in new window →</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            SAHANI SIGNATURE<span>.</span>
+        </div>
+        <p>Market Research Across All Indian States</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p style="margin-top: 30px;">&copy; 2024 SAHANI SIGNATURE PRIVATE LIMITED. All Rights Reserved.</p>
+        <p style="margin-top: 10px; font-size: 14px;">Your Business Goals , Our Signature Solutions.</p>
+    </footer>
+
+    <!-- Floating Contact -->
+    <div class="floating-contact" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+        <a href="#contact" style="width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-red), var(--dark-red)); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 20px; box-shadow: 0 10px 25px rgba(198,40,40,0.3);">
+            <i class="fas fa-comment"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        // GEO Location Detection
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+                document.getElementById('locationText').innerHTML = '<i class="fas fa-spinner fa-spin"></i> Getting location...';
+            } else {
+                document.getElementById('locationText').innerHTML = "Geolocation is not supported";
+            }
+        }
+
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            
+            // Reverse geocoding to get location name
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`)
+                .then(response => response.json())
+                .then(data => {
+                    const location = data.address;
+                    let locationStr = '';
+                    
+                    if (location.state) {
+                        locationStr = location.state;
+                    } else if (location.city) {
+                        locationStr = location.city;
+                    } else {
+                        locationStr = 'India';
+                    }
+                    
+                    document.getElementById('locationText').innerHTML = `<span class="location-dot"></span> Serving: ${locationStr}`;
+                    
+                    // Show location info card
+                    document.getElementById('locationInfo').style.display = 'block';
+                    
+                    // Update location details
+                    const details = document.getElementById('locationDetails');
+                    details.innerHTML = `
+                        <div class="detail-item"><i class="fas fa-map-pin"></i> <span>State: ${location.state || 'Detected'}</span></div>
+                        <div class="detail-item"><i class="fas fa-city"></i> <span>City: ${location.city || location.town || 'Detected'}</span></div>
+                        <div class="detail-item"><i class="fas fa-users"></i> <span>Active Respondents: 1,200+</span></div>
+                        <div class="detail-item"><i class="fas fa-chart-line"></i> <span>Local Surveys: 45 ongoing</span></div>
+                    `;
+                })
+                .catch(() => {
+                    document.getElementById('locationText').innerHTML = '<span class="location-dot"></span> Serving: India';
+                });
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById('locationText').innerHTML = '<span class="location-dot"></span> Location access denied';
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById('locationText').innerHTML = '<span class="location-dot"></span> Location unavailable';
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById('locationText').innerHTML = '<span class="location-dot"></span> Location request timeout';
+                    break;
+                default:
+                    document.getElementById('locationText').innerHTML = '<span class="location-dot"></span> Serving: India';
+            }
+        }
+
+        // State Selection
+        function selectState(state) {
+            // Remove active class from all buttons
+            document.querySelectorAll('.state-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+            
+            // Show location info
+            document.getElementById('locationInfo').style.display = 'block';
+            
+            // Update location details based on selected state
+            const details = document.getElementById('locationDetails');
+            details.innerHTML = `
+                <div class="detail-item"><i class="fas fa-map-pin"></i> <span>Selected: ${state}</span></div>
+                <div class="detail-item"><i class="fas fa-users"></i> <span>Active Respondents: ${Math.floor(Math.random() * 2000) + 500}+</span></div>
+                <div class="detail-item"><i class="fas fa-chart-line"></i> <span>Local Surveys: ${Math.floor(Math.random() * 50) + 20} ongoing</span></div>
+                <div class="detail-item"><i class="fas fa-clock"></i> <span>Avg Response Time: 2.5 hours</span></div>
+            `;
+            
+            document.getElementById('locationText').innerHTML = `<span class="location-dot"></span> Serving: ${state}`;
+        }
+
+        // Initialize all charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Live Chart (Hero)
+            const ctx1 = document.getElementById('liveChart').getContext('2d');
+            new Chart(ctx1, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Survey Responses',
+                        data: [65, 78, 90, 85, 95, 110],
+                        borderColor: '#c62828',
+                        backgroundColor: 'rgba(198, 40, 40, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: { duration: 2000 }
+                }
+            });
+
+            // Region Chart
+            const ctx2 = document.getElementById('regionChart').getContext('2d');
+            new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: ['North', 'South', 'East', 'West', 'Central'],
+                    datasets: [{
+                        label: 'Consumer Preference (%)',
+                        data: [85, 92, 78, 88, 82],
+                        backgroundColor: '#c62828',
+                        borderRadius: 5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: { duration: 2000 }
+                }
+            });
+
+            // Trend Chart
+            const ctx3 = document.getElementById('trendChart').getContext('2d');
+            new Chart(ctx3, {
+                type: 'line',
+                data: {
+                    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+                    datasets: [
+                        {
+                            label: 'Market Growth',
+                            data: [15, 22, 28, 35],
+                            borderColor: '#c62828',
+                            borderWidth: 3
+                        },
+                        {
+                            label: 'Industry Average',
+                            data: [12, 18, 22, 28],
+                            borderColor: '#666',
+                            borderWidth: 2,
+                            borderDash: [5, 5]
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Industry Chart
+            const ctx4 = document.getElementById('industryChart').getContext('2d');
+            new Chart(ctx4, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Retail', 'Healthcare', 'Technology', 'Finance', 'Education'],
+                    datasets: [{
+                        data: [30, 25, 20, 15, 10],
+                        backgroundColor: [
+                            '#c62828',
+                            '#ef5350',
+                            '#e57373',
+                            '#ef9a9a',
+                            '#ffcdd2'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: { animateRotate: true, animateScale: true }
+                }
+            });
+
+            // Satisfaction Chart
+            const ctx5 = document.getElementById('satisfactionChart').getContext('2d');
+            new Chart(ctx5, {
+                type: 'radar',
+                data: {
+                    labels: ['Product Quality', 'Price', 'Service', 'Brand Value', 'Availability', 'Support'],
+                    datasets: [{
+                        label: 'Satisfaction Score',
+                        data: [95, 88, 92, 85, 90, 87],
+                        backgroundColor: 'rgba(198, 40, 40, 0.2)',
+                        borderColor: '#c62828',
+                        pointBackgroundColor: '#c62828'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Create Person Network
+            createNetwork();
+            
+            // Animate background network
+            createBackgroundNetwork();
+            
+            // Update live counters
+            updateLiveCounters();
+        });
+
+        // Person Connection Network
+        function createNetwork() {
+            const container = document.getElementById('networkContainer');
+            if (!container) return;
+            
+            const persons = [
+                { icon: 'fas fa-user-tie', name: 'CEO', x: 10, y: 10 },
+                { icon: 'fas fa-user', name: 'North', x: 30, y: 30 },
+                { icon: 'fas fa-user', name: 'South', x: 70, y: 40 },
+                { icon: 'fas fa-user', name: 'East', x: 20, y: 70 },
+                { icon: 'fas fa-user', name: 'West', x: 80, y: 20 },
+                { icon: 'fas fa-user', name: 'Central', x: 50, y: 60 }
+            ];
+
+            // Scale positions for mobile
+            const width = container.offsetWidth;
+            const height = container.offsetHeight;
+            
+            persons.forEach(p => {
+                p.x = (p.x / 100) * width;
+                p.y = (p.y / 100) * height;
+            });
+
+            // Draw nodes
+            persons.forEach(person => {
+                const node = document.createElement('div');
+                node.className = 'person-node';
+                node.style.left = person.x + 'px';
+                node.style.top = person.y + 'px';
+                node.style.width = '50px';
+                node.style.height = '50px';
+                node.style.fontSize = '20px';
+                node.innerHTML = `<i class="${person.icon}"></i><span style="font-size: 8px;">${person.name}</span>`;
+                
+                container.appendChild(node);
+            });
+        }
+
+        // Background Network Animation
+        function createBackgroundNetwork() {
+            const bg = document.getElementById('network-bg');
+            if (!bg) return;
+            
+            for (let i = 0; i < 15; i++) {
+                const node = document.createElement('div');
+                node.className = 'node';
+                node.style.left = Math.random() * 100 + '%';
+                node.style.top = Math.random() * 100 + '%';
+                bg.appendChild(node);
+            }
+        }
+
+        // Live Counter Animation
+        function updateLiveCounters() {
+            const counters = [
+                { element: document.getElementById('respondentCount'), target: 10847, current: 10000 },
+                { element: document.getElementById('surveyCount'), target: 1234, current: 1000 },
+                { element: document.getElementById('dataPointCount'), target: 2500000, current: 2000000 }
+            ];
+
+            counters.forEach(counter => {
+                if (!counter.element) return;
+                
+                const interval = setInterval(() => {
+                    if (counter.current < counter.target) {
+                        counter.current += Math.ceil((counter.target - counter.current) / 20);
+                        if (counter.element.id === 'dataPointCount') {
+                            counter.element.textContent = (counter.current / 1000000).toFixed(1) + 'M';
+                        } else {
+                            counter.element.textContent = counter.current;
+                        }
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 50);
+            });
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+                closeMenu();
+            });
+        });
+
+        // Auto-detect location on page load
+        window.addEventListener('load', function() {
+            setTimeout(getLocation, 2000);
+        });
+    </script>
+</body>
+</html>
