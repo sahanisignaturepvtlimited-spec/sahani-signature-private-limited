@@ -1667,12 +1667,72 @@
     <!-- Director Section -->
     <section class="director" style="background: linear-gradient(135deg, var(--primary-red), var(--dark-red)); padding: 60px 20px; text-align: center; color: white;">
         <div class="director-content">
-            <i class="fas fa-user-tie" style="font-size: 60px; margin-bottom: 20px;"></i>
-            <h2 style="font-size: 36px; margin-bottom: 15px;">MANAGING DIRECTOR</h2>
-            <h3 style="font-size: 28px; margin-bottom: 15px;">ANAND SAHANI</h3>
-            <p style="font-size: 16px; max-width: 600px; margin: 0 auto;">Leading India's most comprehensive market research network</p>
+
+    <style>
+        .director-images{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            flex-wrap:wrap;
+            margin-bottom:25px;
+        }
+
+        .director-card{
+            text-align:center;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .director-card img{
+            width:160px;
+            height:160px;
+            border-radius:50%;
+            object-fit:cover;
+            border:5px solid #fff;
+            box-shadow:0 15px 30px rgba(0,0,0,0.25);
+            transition:0.4s;
+        }
+
+        .director-card img:hover{
+            transform:scale(1.08);
+        }
+
+        @keyframes float{
+            0%{transform:translateY(0px);}
+            50%{transform:translateY(-12px);}
+            100%{transform:translateY(0px);}
+        }
+
+        .director-card h4{
+            margin-top:10px;
+            font-size:18px;
+        }
+    </style>
+
+    <div class="director-images">
+
+        <!-- Managing Director -->
+        <div class="director-card">
+            <img src="https://image2url.com/r2/default/images/1771477218445-c8212718-6847-4576-9052-b3fe20068d87.jpeg">
+            <h4>Managing Director<br>ANAND SAHANI</h4>
         </div>
-    </section>
+
+        <!-- Associate Director -->
+        <div class="director-card">
+            <img src="https://image2url.com/r2/default/images/1771477351983-5e6a737e-62eb-4345-b609-e5a74d7a32b5.jpeg">
+            <h4>Associate Director<br>AVINASH KUMAR SINGH</h4>
+        </div>
+
+    </div>
+
+    <i class="fas fa-user-tie" style="font-size: 60px; margin-bottom: 20px;"></i>
+    <h2 style="font-size: 36px; margin-bottom: 15px;">MANAGING DIRECTOR</h2>
+    <h3 style="font-size: 28px; margin-bottom: 15px;">ANAND SAHANI</h3>
+    <p style="font-size: 16px; max-width: 600px; margin: 0 auto;">
+        Leading India's most comprehensive market research network
+    </p>
+
+</div>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
