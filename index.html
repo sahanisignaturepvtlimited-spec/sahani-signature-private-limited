@@ -61,34 +61,68 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
-      /* Logo Styles - Bigger Size */
+     /* Logo Styles - Bigger Size with Round Shape */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
-    max-height: 70px;
+    max-height: 90px;
     width: auto;
     object-fit: contain;
+    border-radius: 50%;  /* Round shape */
+    border: 3px solid var(--primary-red);  /* Red border */
+    padding: 5px;  /* Gap between image and border */
+    background: white;  /* White background */
+    box-shadow: 0 5px 15px rgba(198, 40, 40, 0.3);  /* Shadow effect */
+    transition: all 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);  /* Hover par thoda aur bada */
+    box-shadow: 0 8px 25px rgba(198, 40, 40, 0.5);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo img {
-    max-height: 60px;
+    max-height: 80px;
     width: auto;
     object-fit: contain;
+    border-radius: 50%;  /* Round shape */
+    border: 2px solid var(--primary-red);
+    padding: 3px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
+.footer-logo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive for mobile */
 @media (max-width: 768px) {
     .logo img {
-        max-height: 50px;  /* Mobile par bhi bada */
+        max-height: 70px;  /* Mobile par thoda chhota */
     }
     .footer-logo img {
-        max-height: 45px;  /* Mobile par bhi bada */
+        max-height: 60px;
     }
 }
 
 @media (max-width: 480px) {
     .logo img {
-        max-height: 40px;  /* Chhoti mobile screens ke liye */
+        max-height: 60px;  /* Chhoti screens ke liye */
     }
     .footer-logo img {
-        max-height: 35px;
+        max-height: 50px;
     }
 }
         * {
@@ -1289,7 +1323,9 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">
-    <img src="https://image2url.com/r2/default/images/1771611818050-e00080fc-ad47-456d-8d0d-8662fb89eff3.png" alt="SAHANI SIGNATURE Logo" style="height: 70px; width: auto;">
+    <img src="https://image2url.com/r2/default/images/1771611818050-e00080fc-ad47-456d-8d0d-8662fb89eff3.png" 
+         alt="SAHANI SIGNATURE Logo" 
+         style="height: 90px; width: auto; border-radius: 50%;">
 </div>
         <div class="menu-toggle" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
@@ -1845,7 +1881,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-logo">
-    <img src="https://image2url.com/r2/default/images/1771611818050-e00080fc-ad47-456d-8d0d-8662fb89eff3.png" alt="SAHANI SIGNATURE Logo" style="height: 60px; width: auto;">
+    <img src="https://image2url.com/r2/default/images/1771611818050-e00080fc-ad47-456d-8d0d-8662fb89eff3.png" 
+         alt="SAHANI SIGNATURE Logo" 
+         style="height: 80px; width: auto; border-radius: 50%;">
 </div>
         <p>Market Research Across All Indian States</p>
         <div class="social-links">
